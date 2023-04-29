@@ -1,0 +1,135 @@
+:root {
+
+    /* 🎨 */
+    --amethyst:         hsla(269,  94%, 64%,   1);
+    --primarty_purple:  hsla(265,  89%, 78%,   1);
+    --background_dark:  hsla(231,  15%, 18%,   1);
+    --black:            hsla(230,  14%, 25%,   1);
+    --gray:             hsla(232,  14%, 31%,   1);
+    --deep_blue:        hsla(225,  27%, 51%,   1);
+    --blue:             hsla(228,  82%, 61%,   1);
+    --green:            hsla(165,  72%, 56%,   1);
+    --red:              hsla(360,  61%, 63%,   1);
+    --red_heart:        hsla(360, 100%, 74%,   1);
+    --yellow:           hsla( 65,  92%, 76%,   1);
+    --white:            hsla( 60,  30%, 96%,   1);
+
+}
+
+body {
+background-color: var(--background_dark);
+}
+#vs {
+    font-family: 'Whyte Inktrap', monospace;
+    color: var(--deep_blue);
+
+}
+
+/*  📱 Phone */
+@media screen and (max-width: 769px) {
+
+    main {
+    }
+
+    /*  Nav ☰ */
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(to middle, var(--background_dark), rgba(0, 0, 0, 0));
+        padding-bottom: 3rem;
+    }
+    nav article {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav_button {
+        margin-top: 3rem;
+        margin-right: 1.5rem;
+    }
+    .nav_img {
+        width: 4rem;
+    }
+    #forum:hover {
+        fill: blue;
+    }
+    .nav_text {
+        display: none;
+    }
+    #dark-light_mode {
+    margin-left: 2rem;
+        margin-top: 3rem;
+    }
+    .fist_card_img {
+        width: 70%;
+    }
+
+    /*  1°🎴 */
+    #first_card {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 10rem;
+    }
+    #first_card > div {
+        background-color: var(--black);
+        border-radius: 22px;
+        width: 75%;
+        display: flex;
+        margin: auto;
+        align-self: center;
+    }
+    #first_card_img {
+        margin: auto;
+        width: 75%;
+    }
+    #bot_face {
+        display: none;
+    }
+    #second_card {
+        display: flex;
+        background-color: var(--black);
+        border-radius: 22px;
+        width: 75%;
+    }
+    #second_card > div {
+        display: flex;
+        align-self: center;
+    }
+    #arrow_left, #arrow_right {
+        width: 15%;
+    }
+
+    /*  ⚔️ VS ⚔️ */
+    #vs {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        justify-content: center;
+    }
+    .sword {
+        width: 7%;
+    }
+    #vs_text {
+        margin:auto 0.5rem auto 0.5rem;
+    }
+    .elements_div {
+        width: 2rem;
+    }
+
+}
+
+/*  🖥️ Desktop */
+@media screen and (max-width: 1441px) {
+    main {
+
+    }
+}
