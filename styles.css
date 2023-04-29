@@ -68,20 +68,21 @@ background-color: var(--background_dark);
         width: 70%;
     }
 
+    #cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     /*  1°🎴 */
     #first_card {
         width: 100%;
-        display: flex;
-        align-items: center;
         margin-top: 10rem;
     }
     #first_card > div {
         background-color: var(--black);
         border-radius: 22px;
         width: 75%;
-        display: flex;
         margin: auto;
-        align-self: center;
     }
     #first_card_img {
         margin: auto;
@@ -91,14 +92,9 @@ background-color: var(--background_dark);
         display: none;
     }
     #second_card {
-        display: flex;
         background-color: var(--black);
         border-radius: 22px;
         width: 75%;
-    }
-    #second_card > div {
-        display: flex;
-        align-self: center;
     }
     #arrow_left, #arrow_right {
         width: 15%;
